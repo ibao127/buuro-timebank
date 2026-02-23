@@ -26,7 +26,7 @@
 Offers are dependent on a Need and do not exist independently.
 
 ### ACTIVE
-- Created when a provider clicks “Offer Help”.
+- Created when a provider clicks "Offer Help".
 - Awaiting requester decision.
 
 ### WITHDRAWN
@@ -97,14 +97,14 @@ Next states:
 Requester must choose:
 - CONFIRMED
 - DISPUTED
-- (no action → AWAITING_REVIEW after 48 hours)
+- (no action -> AWAITING_REVIEW after 48 hours)
 
 ---
 
 ## CONFIRMED
 - Ledger settles:
-  - Buuro Bank → Provider (+minutes)
-  - Requester → Buuro Bank (+minutes)
+  - Buuro Bank -> Provider (+minutes)
+  - Requester -> Buuro Bank (+minutes)
 - Hold is consumed.
 - The Need is closed.
 - All remaining ACTIVE offers transition to DECLINED.

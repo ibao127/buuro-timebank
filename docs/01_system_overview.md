@@ -1,4 +1,4 @@
-# Buuro Timebank System — Overview (MVP)
+# Buuro Timebank System - Overview (MVP)
 
 ## Goal
 Build a scalable backend model for a neighbourhood timebank:
@@ -32,21 +32,21 @@ Build a scalable backend model for a neighbourhood timebank:
 
 2. Providers browse and filter Needs.
 
-3. Providers create Offers by clicking “Offer Help”.
+3. Providers create Offers by clicking "Offer Help".
 
 4. Requester selects one provider:
    - Need becomes ACCEPTED
-   - the selected provider’s Offer becomes SELECTED
+   - the selected provider's Offer becomes SELECTED
    - other offers remain ACTIVE as standby options
 
 5. Provider performs service and marks completed:
-   - “Completed” is only allowed at or after scheduled_start_at (prevents premature completion)
+   - "Completed" is only allowed at or after scheduled_start_at (prevents premature completion)
 
 6. Requester confirms completion within 48 hours (or disputes).
 
 7. Ledger settles on confirmation:
-   - Buuro Bank → Provider (+minutes)
-   - Requester → Buuro Bank (+minutes)
+   - Buuro Bank -> Provider (+minutes)
+   - Requester -> Buuro Bank (+minutes)
 
 8. Hold is consumed.
 
