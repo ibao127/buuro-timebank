@@ -11,6 +11,7 @@ Build a scalable backend model for a neighbourhood timebank:
 ---
 
 ## Key Concepts
+- Profiles: Including skills, biography, approximate area and potentially portfolio.
 - Time unit: minutes (integer)
 - -2 UURo floor = -120 minutes
 - Posted balance: confirmed ledger history
