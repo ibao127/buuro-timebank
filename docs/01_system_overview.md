@@ -1,54 +1,87 @@
-# Buuro Timebank System - Overview (MVP)
+# Buuro Timebank — System Architecture (MVP)
 
-## Goal
-Build a scalable backend model for a neighbourhood timebank:
-- residents post structured Needs to request help
-- providers actively browse Needs and offer help voluntarily
-- Buuro acts as a clearing bank
-- balances can go negative down to -2 UURo
-- abuse is prevented through a reservation/hold system
+This document defines the core system logic for the Buuro Timebank.
 
 ---
 
-## Key Concepts
-- Profiles: Including skills, biography, approximate area and potentially portfolio.
+# 1. Core Concept
+
+The system is a mutual credit timebank.
+
 - Time unit: minutes (integer)
-- -2 UURo floor = -120 minutes
-- Posted balance: confirmed ledger history
-- Reserved balance: active holds for open Needs
-- Available balance = posted - reserved
+- Users can go negative down to -120 minutes
+- No external currency exists
+- Buuro acts as clearing logic only (not a stored account)
 
-- Needs are structured listings (closer to task postings than social posts)
-- Providers step forward voluntarily (no forced assignment)
+Credits are created and destroyed through confirmed exchanges.
 
 ---
 
-## User Flow
+# 2. Balance Model
 
-1. Requester creates a Need:
-   - selects skill
-   - sets estimated minutes
-   - sets scheduled_start_at (required; must be within 30 days of creation)
-   - system creates a HOLD (reserves minutes, similar to a pre-authorisation)
+Each user has:
 
-2. Providers browse and filter Needs.
+- confirmed_balance (integer)
+- reserved_minutes (integer)
 
-3. Providers create Offers by clicking "Offer Help".
+Available balance is computed:
 
-4. Requester selects one provider:
-   - Need becomes ACCEPTED
-   - the selected provider's Offer becomes SELECTED
-   - other offers remain ACTIVE as standby options
+available_balance = confirmed_balance - reserved_minutes
 
-5. Provider performs service and marks completed:
-   - "Completed" is only allowed at or after scheduled_start_at (prevents premature completion)
+Constraint:
+A user cannot create a Need if:
 
-6. Requester confirms completion within 48 hours (or disputes).
+available_balance - estimated_minutes < -120
 
-7. Ledger settles on confirmation:
-   - Buuro Bank -> Provider (+minutes)
-   - Requester -> Buuro Bank (+minutes)
+---
 
-8. Hold is consumed.
+# 3. Hold Mechanism
 
-We aim for a reciprocity-based platform where help is offered voluntarily.
+When a Need is created:
+
+- estimated_minutes are added to reserved_minutes
+- No transaction is created
+- confirmed_balance remains unchanged
+
+When a Need is:
+
+CANCELLED → reserved_minutes decrease  
+EXPIRED → reserved_minutes decrease  
+CONFIRMED → reserved_minutes decrease + transactions created  
+
+This prevents double-spending of minutes.
+
+---
+
+# 4. Settlement Logic
+
+Transactions are created ONLY when:
+
+Need.status == CONFIRMED
+
+Two transactions are created:
+
+1) Requester → Buuro (internal accounting)
+2) Buuro → Provider
+
+OR simplified:
+- Requester confirmed_balance -= minutes
+- Provider confirmed_balance += minutes
+
+Transactions are immutable.
+
+---
+
+# 5. Time Constraints
+
+- scheduled_start_at is required
+- Must be within 30 days of Need creation
+- Provider cannot mark completed before scheduled_start_at
+
+---
+
+# 6. Visibility Rules
+
+- Needs are publicly browsable
+- Contact info is hidden until ACCEPTED
+- Only requester and selected provider can see contact details after ACCEPTED
