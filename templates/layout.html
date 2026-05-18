@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buuro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka+One&family=Pacifico&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}" class="nav-logo">
+            <img src="{{ url_for('static', filename='images/home-icon.svg') }}" alt="home">
+            <span class="nav-brand">
+                <img src="{{ url_for('static', filename='images/buuro-logo.svg') }}" alt="Buuro">
+            </span>
+        </a>
+
+        <div class="nav-sep"></div>
+        <div class="nav-links">
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('events') }}">Events</a>
+            <a href="{{ url_for('requests') }}">Requests</a>
+        </div>
+
+        <div class="nav-right">
+            <button aria-label="Language">
+                <img src="{{ url_for('static', filename='images/globe-icon.svg') }}" alt="language">
+            </button>
+            <button aria-label="Account">
+                <img src="{{ url_for('static', filename='images/user-icon.svg') }}" alt="account">
+            </button>
+        </div>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

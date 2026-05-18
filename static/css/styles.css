@@ -1,0 +1,243 @@
+/* ── VARIABLES ── */
+:root {
+  --cream: #f5ece8;
+  --lavender: #e0c8ea;
+  --dark: #1a1112;
+  --card-bg: #faf5f3;
+  --font-brand: 'Caveat', cursive;
+  --font-mono: 'Space Mono', monospace;
+  --font-mono-weight: 700;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark);
+  font-family: var(--font-body);
+}
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1.5px solid var(--dark);
+  padding: 0 24px;
+  background: var(--cream);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.nav-brand {
+  font-family: var(--font-brand);
+  font-size: 15px;
+}
+
+/* .nav-sep {
+  width: 1.5px;
+  height: 32px;
+  background: var(--dark);
+  margin: 0 20px;
+} */
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  font-family: var(--font-brand);
+  font-size: 20px;
+  color: var(--dark);
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.nav-links a:nth-child(2) {
+  border-left: 1.5px solid var(--dark);
+  border-right: 1.5px solid var(--dark);
+}
+
+/* .nav-links a:first-child {
+  border-left: 1.5px solid var(--dark);
+} */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
+}
+
+.nav-right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.nav-logo .nav-brand img {
+    height: 50px;
+    width: auto;
+    margin-top: 11px;
+    
+}
+
+.nav-right button img {
+    height: 20px;
+    width: auto;
+}
+
+.nav-logo > img {
+    height: 24px;
+    width: auto;
+}
+
+.nav-logo {
+    flex: 1;
+}
+
+.nav-right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+/* .hero-logo img {
+    height: 300px;
+    width: auto;
+} */
+
+.hero p {
+    margin-top: -100px;
+    max-width: 600px;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--font-brand);
+    font-weight: var(--font-mono-weight);
+}
+
+.hero-cta {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-brand);
+    /* font-weight: var(--font-mono-weight); */
+    font-size: 20px;
+}
+
+.hero-cta img {
+    height: 60px;
+    width: auto;
+    transform: rotate(180deg);
+}
+
+/* ── BELOW FOLD ── */
+.below-fold {
+    padding: 48px 24px;
+    background: var(--cream);
+}
+
+.section-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.section-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-col h2 {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1.5px solid var(--dark);
+    border-radius: 16px;
+    padding: 16px;
+    /* flex: 1; */
+    overflow: hidden;
+    position: relative;
+}
+
+.card-item {
+    padding: 12px 0;
+    border-bottom: 1.5px solid var(--dark);
+}
+
+.card-item:last-child {
+    border-bottom: none;
+}
+
+.card-item h3 {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.card-item p {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 8px;
+}
+
+.card a {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--dark);
+    text-decoration: underline;
+    display: block;
+    text-align: right;
+}
+
+.card-text {
+    position: relative;
+}
+
+.card-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    background: linear-gradient(to bottom, transparent, var(--card-bg));
+    pointer-events: none;
+}
+
