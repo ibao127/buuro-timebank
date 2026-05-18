@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="about">
+
+        <div class="about-row">
+            <div class="about-text">
+                <h2>Our mission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+            </div>
+            <div class="about-image">
+                <div class="about-image">
+                    <div class="slideshow">
+                        <img src="{{ url_for('static', filename='images/img-1.jpg') }}" alt="mission">
+                        <img src="{{ url_for('static', filename='images/img-2.jpg') }}" alt="mission">
+                        <img src="{{ url_for('static', filename='images/img-3.jpg') }}" alt="mission">
+                        <img src="{{ url_for('static', filename='images/img-4.jpg') }}" alt="mission">
+                        <img src="{{ url_for('static', filename='images/img-5.jpg') }}" alt="mission">
+                        <img src="{{ url_for('static', filename='images/img-6.jpeg') }}" alt="mission">
+                        <img src="{{ url_for('static', filename='images/img-7.jpeg') }}" alt="mission">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-row reverse">
+            <div class="about-text">
+                <h2>What is Time-banking?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+            </div>
+            <div class="about-image">
+                <div class="slideshow">
+                    <img src="{{ url_for('static', filename='images/img-8.jpeg') }}" alt="mission">
+                    <img src="{{ url_for('static', filename='images/img-9.jpeg') }}" alt="mission">
+                    <img src="{{ url_for('static', filename='images/img-10.jpeg') }}" alt="mission">
+                    <img src="{{ url_for('static', filename='images/img-11.jpeg') }}" alt="mission">
+                    <img src="{{ url_for('static', filename='images/img-12.jpeg') }}" alt="mission">
+                    <img src="{{ url_for('static', filename='images/img-13.jpeg') }}" alt="mission">
+                    <img src="{{ url_for('static', filename='images/img-14.jpeg') }}" alt="mission">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

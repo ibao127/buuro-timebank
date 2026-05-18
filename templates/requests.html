@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="requests">
+    <h1>See how you can help</h1>
+
+    <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search requests...">
+    </div>
+
+    <div class="filters">
+        <span>Filter by:</span>
+        <select><option>Location</option></select>
+        <select><option>Date</option></select>
+        <select><option>Uuros</option></select>
+        <select><option>Skills</option></select>
+        <select><option>My skills only</option></select>
+    </div>
+
+    <div class="skills-section">
+        <h2>Most requested skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <div class="skill-icon"></div>
+                <span>Cooking</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon"></div>
+                <span>Cleaning</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon"></div>
+                <span>Transport</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon"></div>
+                <span>Gardening</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon"></div>
+                <span>Translation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="requests-section">
+        <h2>Recent listing</h2>
+        <div class="requests-grid">
+            <div class="request-card">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="request-footer">
+                    <span class="request-user">👤 Minseo Lee</span>
+                    <span class="request-uuros">2 uuros</span>
+                </div>
+            </div>
+            <div class="request-card">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="request-footer">
+                    <span class="request-user">👤 Iris Klok</span>
+                    <span class="request-uuros">3 uuros</span>
+                </div>
+            </div>
+            <div class="request-card">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="request-footer">
+                    <span class="request-user">👤 Bao</span>
+                    <span class="request-uuros">1 uuro</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
