@@ -38,6 +38,10 @@ nav {
   z-index: 100;
 }
 
+a {
+    color: var(--red);
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -275,6 +279,7 @@ nav {
 
 .about-text h2 {
     font-family: var(--font-mono);
+    color: var(--red);
     font-size: 30px;
     font-weight: 700;
 }
