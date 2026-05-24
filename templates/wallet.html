@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="wallet">
+    <h1>Your Time Bank Account</h1>
+
+    <div class="wallet-balance">
+        <div class="balance-card">
+            <span class="balance-label">Balance</span>
+            <span class="balance-amount">02:30 UURO</span>
+        </div>
+        <div class="balance-card reserved">
+            <span class="balance-label">Reserved</span>
+            <span class="balance-amount">- 01:00 UURO</span>
+        </div>
+    </div>
+
+    <div class="transactions">
+        <h2>Transactions</h2>
+        <div class="transaction-filters">
+            <button class="filter-btn">Start date</button>
+            <button class="filter-btn">End date</button>
+            <button class="filter-btn">Incoming</button>
+            <button class="filter-btn">Outgoing</button>
+            <button class="filter-btn">Download
+                <img src="{{ url_for('static', filename='images/download.svg') }}" alt="download">
+            </button>
+        </div>
+        <div class="transaction-list">
+            <div class="transaction-item">
+                <div class="transaction-date">
+                    <span>12/06/2025</span>
+                    <span class="transaction-time">14:30</span>
+                </div>
+                <div class="transaction-info">
+                    <span>Iris Klok → Bao</span>
+                    <span class="transaction-id">Task #001</span>
+                </div>
+                <span class="transaction-amount negative">- 01:00 UURO</span>
+            </div>
+            <div class="transaction-item">
+                <div class="transaction-date">
+                    <span>10/06/2025</span>
+                    <span class="transaction-time">10:00</span>
+                </div>
+                <div class="transaction-info">
+                    <span>John Doe → Iris Klok</span>
+                    <span class="transaction-id">Task #002</span>
+                </div>
+                <span class="transaction-amount positive">+ 02:00 UURO</span>
+            </div>
+            <div class="transaction-item">
+                <div class="transaction-date">
+                    <span>08/06/2025</span>
+                    <span class="transaction-time">09:15</span>
+                </div>
+                <div class="transaction-info">
+                    <span>Bruce Wayne → Iris Klok</span>
+                    <span class="transaction-id">Task #003</span>
+                </div>
+                <span class="transaction-amount positive">+ 03:00 UURO</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

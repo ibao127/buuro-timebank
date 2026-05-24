@@ -2,10 +2,15 @@
 
 {% block content %}
 <section class="requests">
-    <h1>See how you can help</h1>
+    <div class="requests-header">
+        <h1>See how you can help</h1>
+        <a href="#" class="post-btn">+ Post a request</a>
+    </div>
 
     <div class="search-bar">
-        <span>🔍</span>
+        <span>
+            <img src="{{ url_for('static', filename='images/search.svg') }}" alt="search">
+        </span>
         <input type="text" placeholder="Search requests...">
     </div>
 
@@ -68,6 +73,30 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="request-footer">
                     <span class="request-user">👤 Bao</span>
+                    <span class="request-uuros">1 uuro</span>
+                </div>
+            </div>
+            <div class="request-card">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="request-footer">
+                    <span class="request-user">👤 Katharina</span>
+                    <span class="request-uuros">2 uuros</span>
+                </div>
+            </div>
+            <div class="request-card">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="request-footer">
+                    <span class="request-user">👤 Sade</span>
+                    <span class="request-uuros">4 uuros</span>
+                </div>
+            </div>
+            <div class="request-card">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="request-footer">
+                    <span class="request-user">👤 Minseo</span>
                     <span class="request-uuros">1 uuro</span>
                 </div>
             </div>

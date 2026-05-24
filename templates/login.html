@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block no_wave %}hidden{% endblock %}
+
+{% block content %}
+<section class="login">
+    <div class="login-card">
+        <div class="login-field">
+            <label>Email or username</label>
+            <input type="text" placeholder="your.email@example.com">
+        </div>
+        <div class="login-field">
+            <label>Password</label>
+            <div class="password-field">
+                <input type="password" placeholder="••••••••">
+                <button class="toggle-password" aria-label="Toggle password">👁</button>
+            </div>
+        </div>
+        <div class="login-actions">
+            <a href="#" class="forgot-password">Forgot your password?</a>
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

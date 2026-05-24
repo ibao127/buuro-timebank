@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block no_wave %}hidden{% endblock %}
+
+{% block content %}
+<section class="login">
+    <div class="login-card">
+        <div class="login-field">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+        </div>
+        <div class="login-field">
+            <label>Email</label>
+            <input type="email" placeholder="your.email@example.com">
+        </div>
+        <div class="login-field">
+            <label>Phone number</label>
+            <input type="tel" placeholder="+31 6 12345678">
+        </div>
+        <div class="login-field">
+            <label>Password</label>
+            <div class="password-field">
+                <input type="password" placeholder="••••••••">
+                <button class="toggle-password" aria-label="Toggle password">👁</button>
+            </div>
+        </div>
+        <div class="login-field">
+            <label>Confirm password</label>
+            <div class="password-field">
+                <input type="password" placeholder="••••••••">
+                <button class="toggle-password" aria-label="Toggle password">👁</button>
+            </div>
+        </div>
+        <div class="login-actions">
+            <a href="{{ url_for('login') }}" class="forgot-password">Already have an account?</a>
+            <a href="#" class="login-btn">Sign up</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

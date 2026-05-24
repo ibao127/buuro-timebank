@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block no_wave %}hidden{% endblock %}
+
+{% block content %}
+<div class="sidebar-toggle" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="sidebar" id="sidebar">
+    <a href="{{ url_for('account') }}">Account</a>
+    <a href="{{ url_for('wallet') }}">Wallet</a>
+    <a href="#">Settings</a>
+    <a href="#">Edit Profile</a>
+    <a href="#">Log out</a>
+</div>
+<section class="account">
+
+    <div class="profile-card">
+        <div class="profile-left">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h1>Iris Klok</h1>
+                <div class="profile-meta">
+                    <img src="{{ url_for('static', filename='images/star.svg') }}" alt="rating">4.8
+                    <img src="{{ url_for('static', filename='images/verification.svg') }}" alt="verified">Verified
+                </div>
+                <div class="profile-skills">
+                    <span class="skill-tag">Cooking</span>
+                    <span class="skill-tag">Cleaning</span>
+                </div>
+                <p class="profile-bio">"I like helping people in community :)"</p>
+            </div>
+        </div>
+        <div class="profile-balance">
+            <span>Balance</span>
+            <span>08:30 UURO</span>
+        </div>
+    </div>
+
+    <div class="impact">
+        <h2>My Impact</h2>
+        <div class="impact-grid">
+            <div class="impact-card">
+                <span class="impact-icon">👥</span>
+                <span class="impact-number">12</span>
+                <span class="impact-label">People Helped</span>
+            </div>
+            <div class="impact-card">
+                <img src="{{ url_for('static', filename='images/clock.svg') }}" alt="time">
+                <span class="impact-number">18:30</span>
+                <span class="impact-label">UURO earned</span>
+            </div>
+            <div class="impact-card">
+                <img src="{{ url_for('static', filename='images/clock.svg') }}" alt="time">
+                <span class="impact-number">10:00</span>
+                <span class="impact-label">UURO spent</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-availability">
+        <h2>Skills & Availability</h2>
+        <div class="profile-skills">
+            <span class="skill-tag">Cooking</span>
+            <span class="skill-tag">Cleaning</span>
+            <span class="skill-tag">Translation</span>
+        </div>
+        <ul>
+            <li>Weekends</li>
+            <li>Evenings (6:00 PM - 10:00 PM)</li>
+        </ul>
+    </div>
+
+    <div class="recent-activity">
+        <h2>Recent Activity</h2>
+        <div class="activity-list">
+            <div class="activity-item">
+                <span>Helped Bao → Gardening</span>
+                <span class="activity-time">2 d ago</span>
+            </div>
+            <div class="activity-item">
+                <span>Helped Katharina → Cooking</span>
+                <span class="activity-time">4 d ago</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="{{ url_for('static', filename='images/ratings.svg') }}" alt="rating">
+                <span class="review-score">5.0</span>
+                <p>Great helper!</p>
+                <p class="review-author">- Bao</p>
+            </div>
+            <div class="review-card">
+                <img src="{{ url_for('static', filename='images/ratings.svg') }}" alt="rating">
+                <span class="review-score">4.5</span>
+                <p>Very helpful!</p>
+                <p class="review-author">- John Smith</p>
+            </div>
+            <div class="review-card">
+                <img src="{{ url_for('static', filename='images/ratings.svg') }}" alt="rating">
+                <span class="review-score">5.0</span>
+                <p>Good support.</p>
+                <p class="review-author">- John Doe</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
