@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What is Buuro?</span>
+                <span class="faq-arrow">↓</span>
+            </div>
+            <div class="faq-answer">
+                <p>Buuro is a neighbourhood timebank where people exchange time instead of money. Every hour of help you give earns you one Uuro.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>What is a Uuro?</span>
+                <span class="faq-arrow">↓</span>
+            </div>
+            <div class="faq-answer">
+                <p>A Uuro is the time currency used in Buuro. One Uuro equals one hour of help given or received.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>How do I earn Uuros?</span>
+                <span class="faq-arrow">↓</span>
+            </div>
+            <div class="faq-answer">
+                <p>You earn Uuros by helping your neighbours. Once a task is confirmed, the Uuros are transferred to your account automatically.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>Can my balance go negative?</span>
+                <span class="faq-arrow">↓</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, up to -120 minutes. This allows new members to request help before they've had a chance to give any.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <span>How do I post a request?</span>
+                <span class="faq-arrow">↓</span>
+            </div>
+            <div class="faq-answer">
+                <p>Go to the Requests page and click "Post a request". Fill in the details and set how many Uuros you're offering.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

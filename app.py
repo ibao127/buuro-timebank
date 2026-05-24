@@ -39,5 +39,9 @@ def wallet():
 @app.route('/account')
 def account():
     return render_template('account.html')
+
+@app.route('/faq')
+def faq():
+    return render_template('faq.html')
 if __name__ == '__main__':
     app.run(debug=True)
