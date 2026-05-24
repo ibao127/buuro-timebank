@@ -6,27 +6,16 @@
             <img src="{{ url_for('static', filename='images/buuro-logo.svg') }}" alt="Buuro">
         </div>
         <div>
-            <p>At Buuro we bring community together through shared time.</p>
+            <p>At Buuro we bring Amsterdam Noord together through shared time.</p>
         </div>
         <div class="hero-cta">
-            <p>Find out more</p>
+            <p><a href="#overview">Find out more</a></p>
             <img src="{{ url_for('static', filename='images/squiggle_arrow-icon.svg') }}" alt="scroll down">
         </div>
     </section>
 
     <section class="below-fold">
-        <div class="section-grid">
-            <div class="section-col">
-                <h2>Buuro's Mission</h2>
-                <div class="card">
-                    <div class="card-item">
-                    <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quo, atque dolorum voluptas nam ex deleniti fuga, laboriosam consequuntur unde cum asperiores soluta optio vel reiciendis dolores sed, non aliquid sapiente animi. Tempore commodi, reiciendis maiores delectus beatae iste doloribus quisquam maxime! Itaque facere ullam impedit saepe, repellat dignissimos consequatur!</p>
-                    </div>
-                    <a href="{{ url_for('about') }}">more info</a>
-                    </div>
-                </div>
-            </div>
+        <div class="section-grid" id="overview">
 
             <div class="section-col">
                 <h2>Events</h2>
@@ -36,14 +25,26 @@
                         <div class="card-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reiciendis aspernatur. Totam sint in aspernatur voluptatibus consequatur assumenda ipsum labore!</p>
                         </div>
-                        <a href="{{ url_for('events') }}">more info</a>
+                        <a class="more-info" href="{{ url_for('events') }}">more info</a>
                     </div>
                     <div class="card-item">
                         <h3>Het Groene Veld</h3>
                         <div class="card-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque alias adipisci veniam rem dicta sit nobis molestias aperiam quibusdam eaque.</p>
                         </div>
-                        <a href="{{ url_for('events') }}">more info</a>
+                        <a class="more-info" href="{{ url_for('events') }}">more info</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-col">
+                <h2>Buuro's Mission</h2>
+                <div class="card">
+                    <div class="card-item">
+                    <div class="card-text">
+                        <p>Our time is maybe the most precious thing we have. What you do with your time can make a big difference for yourself and for others. At Buuro we believe that time is best used on, for, and with each other. On our <a href="https://buuro.net/en">website</a> you can find neighbours that can and want to help each other.</p>
+                        <p>Sometimes you need help, sometimes someone else could really use yours. That is how we create a friendly atmosphere and support within the neighbourhood. Happiness multiplies by sharing it, so go and find the neighbour that can use your help today!</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -56,14 +57,14 @@
                         <div class="card-text">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nulla quo consequatur repellendus architecto a.</p>
                         </div>
-                        <a href="{{ url_for('requests') }}">more info</a>
+                        <a class="more-info" href="{{ url_for('requests') }}">more info</a>
                     </div>
                     <div class="card-item">
                         <h3>Minseo Lee — 2 uuros</h3>
                         <div class="card-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non, molestiae ea in nisi blanditiis?</p>
                         </div>
-                        <a href="{{ url_for('requests') }}">more info</a>
+                        <a class="more-info" href="{{ url_for('requests') }}">more info</a>
                     </div>
                 </div>
             </div>
