@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.9299 20.6898C19.4599 22.2898 20.6699 22.4498 21.5999 21.0498C22.4499 19.7698 21.8899 18.7198 20.3499 18.7198C19.2099 18.7098 18.5699 19.5998 18.9299 20.6898Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Linearity Curve (http://linearity.io/curve) -->
+<svg height="512.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 512 512" width="512.0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1">
+<path d="M181.512 18.5841C180.532 18.6933 152.674 19.8255 126.278 32.3052C83.1652 52.6881 49.4027 76.4876 30.8615 120.487C-5.69854 207.245 44.9676 359.816 158.266 368.089C364.534 383.15 453.927 166.758 311.42 49.5242C280.751 24.2944 226.49 13.5722 181.512 18.5841Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M369.136 299.112C359.635 315.166 347.013 330.81 332.364 342.675C326.704 347.26 319.412 350.632 314.32 355.787" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M342.687 374.734C342.366 374.27 373.426 341.856 377.482 335.75C378.614 334.046 384.462 323.659 386.622 324.427C394.057 327.068 402.523 339.866 408.059 345.139C425.219 361.482 468.706 405.092 471.345 410.641C472.495 413.058 464.295 422.165 462.863 424.019C459.059 428.945 435.079 463.725 430.403 461.924C420.14 457.971 409.689 444.793 402.511 436.924C383.888 416.507 358.285 397.23 342.687 374.734Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+</g>
 </svg>

@@ -1,5 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15.71 15.18L12.61 13.33C12.07 13.01 11.63 12.24 11.63 11.61V7.51001" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Linearity Curve (http://linearity.io/curve) -->
+<svg height="512.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 512 512" width="512.0000000000005px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1">
+<path d="M233.35 19.0047C232.057 19.1521 195.306 20.6803 160.483 37.5254C103.607 65.0382 59.0664 97.1626 34.6061 156.553C-13.6253 273.659 53.2155 479.599 202.682 490.765C474.8 511.095 592.73 219.009 404.73 60.7675C364.27 26.7124 292.687 12.2396 233.35 19.0047Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M245.775 21.9179C245.775 37.0324 243.906 55.6973 247.569 70.35" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M249.363 488.301C243.808 477.191 249.961 455.629 249.961 443.457" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M25.881 265.676C41.2923 266.08 57.9659 263.637 73.1871 266.22" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M489.593 248.5C467.505 240.047 437.58 251.467 415.673 243.083" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M241.232 251.356C234.545 252.854 247.477 275.111 253.087 256.088C253.945 253.181 254.351 253.25 252.748 250.766C242.812 235.377 221.129 254.052 234.4 266.523C246.09 277.507 263.782 260.346 254.758 248.327C241.15 230.2 215.872 251.588 233.351 268.178C244.489 278.751 266.85 262.687 260.864 248.948C252.304 229.305 224.167 240.736 227.519 260.535C231.638 284.86 257.257 277.834 263.376 258.898C270.312 237.432 232.731 226.964 225.924 250.238C218.903 274.242 259.454 285.472 263.11 261.514C266.747 237.671 224.936 234.756 232.191 257.926" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M194.679 75.0553C199.667 116.682 219.069 159.004 232.162 198.557C235.909 209.876 238.93 234.973 247.297 243.728" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M252.137 261.132C272.415 235.332 303.908 214.427 328.111 192.08C333.311 187.279 349.452 177.328 351.804 170.771" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+</g>
 </svg>

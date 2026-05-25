@@ -66,7 +66,7 @@ a {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 25px;
   text-decoration: none;
   color: var(--dark);
 }
@@ -269,7 +269,6 @@ a {
 .hero-cta img {
     height: 60px;
     width: auto;
-    transform: rotate(180deg);
 }
 
 /* ── BELOW FOLD ── */
@@ -618,16 +617,15 @@ a {
     align-items: center;
     gap: 8px;
     border: 1.5px solid var(--dark);
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 8px 16px;
     max-width: 400px;
     background: var(--card-bg);
 }
 
-.search-bar img {
-    height: 16px;
-    width: auto;
-    padding-top: 2px;
+.search-bar img {    
+    height: 1.5em;
+    padding-top: 5px;
 }
 
 .search-bar input {
@@ -907,7 +905,13 @@ a {
     border-radius: 50%;
     border: 1.5px solid var(--dark);
     background: var(--cream);
-    flex-shrink: 0;
+    display: flex;
+}
+
+.profile-avatar img {
+    object-fit: contain;
+    overflow: clip;
+    border-radius: 50%;
 }
 
 .profile-info {

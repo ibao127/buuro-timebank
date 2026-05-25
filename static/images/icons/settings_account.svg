@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 7H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M3 12H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M3 17H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Linearity Curve (http://linearity.io/curve) -->
+<svg height="512.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 512 512" width="512.0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1" opacity="0.5" visibility="hidden">
+<path d="M15.829 250.87L167.949 180.936L196.916 15.3384L310.044 139.139L475.659 115.612L393.456 262.059L466.844 413.116L302.913 379.825L182.654 496.711L163.541 329.688L15.829 250.87Z" fill="none" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="15.1923"/>
+</g>
+<g id="Layer-2">
+<path d="M54.3978 116.5C75.2515 127.427 97.2869 121.455 118.317 122.167C161.096 123.615 203.973 129.251 246.757 132.269C317.437 137.255 389.169 160.032 459.718 155.742" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M54.3891 239.782C99.1254 233.246 152.027 241.035 196.886 244.153C279.78 249.916 363.463 254.206 446.364 257.091" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+<path d="M39.503 379.535C84.3684 368.598 135.487 381.962 180.924 382.114C249.3 382.343 316.946 374.532 385.37 381.496C411.929 384.199 438.177 399.019 464.714 398.102" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="15.1923"/>
+</g>
 </svg>
