@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="request-outline">
+    <div class="request-info">
+        <div class="request-issuer">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h2>Minseo Lee</h2>
+                <div class="profile-meta">
+                    <img src="{{ url_for('static', filename='images/icons/star.svg') }}" alt="rating">4.9
+                    <img src="{{ url_for('static', filename='images/icons/verification.svg') }}" alt="verified">Verified
+                </div>
+            </div>
+        </div>
+        <div class="request-logistics">
+            <table>
+                <tr>
+                    <th>Location:</th>
+                    <td>NDSM</td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>August 18th, 2025</td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td>2 Uuros</td>
+                </tr>
+                <tr>
+                    <th>Status:</th>
+                    <td>Fulfilled</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="request-content">
+        <div class="request-skills">
+            <h2>Necessary Skills:</h2>
+            <p>
+                <span class="skill-tag">Knowledge of Dutch Gov Processes</span>
+            </p>
+        </div>
+        <div class="request-details">
+            <h2>Sort out student documents with me please</h2>
+            <p>Since I just moved here as a student from abroad, I need some help figuring out Dutch burocracy. I need to fill out a bunch of forms to apply for student housing and to enroll in uni - anybody who knows how to take care of all that please send me a contact request!</p>
+        </div>
+        <div class="inquire">
+            <a href="{{ url_for('confirmation') }}">I'm interested!</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

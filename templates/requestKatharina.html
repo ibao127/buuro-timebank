@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="request-outline">
+    <div class="request-info">
+        <div class="request-issuer">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h2>Katharina</h2>
+                <div class="profile-meta">
+                    <img src="{{ url_for('static', filename='images/icons/star.svg') }}" alt="rating">3.5
+                    <img src="{{ url_for('static', filename='images/icons/verification.svg') }}" alt="verified">Verified
+                </div>
+            </div>
+        </div>
+        <div class="request-logistics">
+            <table>
+                <tr>
+                    <th>Location:</th>
+                    <td>Close to: Grasweg</td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>July 12th, 2026</td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td>2 Uuros</td>
+                </tr>
+                <tr>
+                    <th>Status:</th>
+                    <td>Offer Accepted</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="request-content">
+        <div class="request-skills">
+            <h2>Necessary Skills:</h2>
+            <p>
+                <span class="skill-tag">Cat Feeding</span>
+                <span class="skill-tag">Cleaning</span>
+                <span class="skill-tag">Doing Dishes</span>
+                <span class="skill-tag">Pet Grooming</span>
+            </p>
+        </div>
+        <div class="request-details">
+            <h2>Take care of my cats for a day while I'm out of town 🐈</h2>
+            <p>I will be gone for a day in July and need someone to come in one time to take care and check in on my kittens. They have to be fed for the day, their litterbox and waterfountain cleaned and I would appreciate it if you spend some time with them as they are big cuddlers.</p>
+        </div>
+        <div class="inquire">
+            <a href="{{ url_for('confirmation') }}">I'm interested!</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

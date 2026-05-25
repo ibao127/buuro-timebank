@@ -24,6 +24,30 @@ def events():
 def requests_page():
     return render_template('requests.html')
 
+@app.route('/requestIris')
+def requestIris():
+    return render_template('requestIris.html')
+
+@app.route('/requestMinseo')
+def requestMinseo():
+    return render_template('requestMinseo.html')
+
+@app.route('/requestBao')
+def requestBao():
+    return render_template('requestBao.html')
+
+@app.route('/requestKatharina')
+def requestKatharina():
+    return render_template('requestKatharina.html')
+
+@app.route('/requestSade')
+def requestSade():
+    return render_template('requestSade.html')
+
+@app.route('/confirmation')
+def confirmation():
+    return render_template('confirmation.html')
+
 @app.route('/login')
 def login():
     return render_template('login.html')

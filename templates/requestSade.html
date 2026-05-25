@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="request-outline">
+    <div class="request-info">
+        <div class="request-issuer">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h2>Sade</h2>
+                <div class="profile-meta">
+                    <img src="{{ url_for('static', filename='images/icons/star.svg') }}" alt="rating">4.0
+                    <img src="{{ url_for('static', filename='images/icons/verification.svg') }}" alt="verified">Verified
+                </div>
+            </div>
+        </div>
+        <div class="request-logistics">
+            <table>
+                <tr>
+                    <th>Location:</th>
+                    <td>Amsterdam (General)</td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>Every other Saturday</td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td>5 Uuros</td>
+                </tr>
+                <tr>
+                    <th>Status:</th>
+                    <td>Open</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="request-content">
+        <div class="request-skills">
+            <h2>Necessary Skills:</h2>
+            <p>
+                <span class="skill-tag">Driving</span>
+                <span class="skill-tag">Planning</span>
+                <span class="skill-tag">Communication</span>
+            </p>
+        </div>
+        <div class="request-details">
+            <h2>Run errands for me 🛍️</h2>
+            <p>After really busy weeks as a student who also works I would love some help running errands. These errands can be different every week but will mostly include shopping for groceries and other necessities, driving around and picking up/returning online orders. I will provide a rental car for the day and you can feel free to use it for your own needs as long as my errands are taken care of :)</p>
+        </div>
+        <div class="inquire">
+            <a href="{{ url_for('confirmation') }}">I'm interested!</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

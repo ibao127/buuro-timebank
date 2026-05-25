@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="request-outline">
+    <div class="request-info">
+        <div class="request-issuer">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h2>Bao</h2>
+                <div class="profile-meta">
+                    <img src="{{ url_for('static', filename='images/icons/star.svg') }}" alt="rating">4.5
+                    <img src="{{ url_for('static', filename='images/icons/verification.svg') }}" alt="verified">Verified
+                </div>
+            </div>
+        </div>
+        <div class="request-logistics">
+            <table>
+                <tr>
+                    <th>Location:</th>
+                    <td>Amsterdam Noord Station</td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>May 26th, 2026</td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td>1 Uuros</td>
+                </tr>
+                <tr>
+                    <th>Status:</th>
+                    <td>Overdue</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="request-content">
+        <div class="request-skills">
+            <h2>Necessary Skills:</h2>
+            <p>
+                <span class="skill-tag">Canvas Access</span>
+                <span class="skill-tag">Basic Computer Skills</span>
+            </p>
+        </div>
+        <div class="request-details">
+            <h2>Submit Group Assignment</h2>
+            <p>For personal reasons I won't be able to submit my group's assignment on that day. I need help from someone who can log into my Canvas and submit the files for me.</p>
+        </div>
+        <div class="inquire">
+            <a href="{{ url_for('confirmation') }}">I'm interested!</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

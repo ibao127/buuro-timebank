@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="request-outline">
+    <div class="request-info">
+        <div class="request-issuer">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h2>Iris Klok</h2>
+                <div class="profile-meta">
+                    <img src="{{ url_for('static', filename='images/icons/star.svg') }}" alt="rating">4.8
+                    <img src="{{ url_for('static', filename='images/icons/verification.svg') }}" alt="verified">Verified
+                </div>
+            </div>
+        </div>
+        <div class="request-logistics">
+            <table>
+                <tr>
+                    <th>Location:</th>
+                    <td>Amsterdam Noord</td>
+                </tr>
+                <tr>
+                    <th>Date:</th>
+                    <td>Weekly on Thursdays</td>
+                </tr>
+                <tr>
+                    <th>Time:</th>
+                    <td>3 Uuros</td>
+                </tr>
+                <tr>
+                    <th>Status:</th>
+                    <td>Open</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="request-content">
+        <div class="request-skills">
+            <h2>Necessary Skills:</h2>
+            <p>
+                <span class="skill-tag">Gardening</span>
+                <span class="skill-tag">Cleaning</span>
+                <span class="skill-tag">Harvesting</span>
+            </p>
+        </div>
+        <div class="request-details">
+            <h2>Help me take care of my garden!</h2>
+            <p>Because of a recent injury on my hand, I need someone to come by and maintain my garden once a week until my injury is healed. Tasks include watering, weeding, harvesting, and fertilising my plants. On top of that, I would appreciate help with clean-up afterwards and composting any waste. On top of the Uuros you can earn, I would love to share some of my harvest with you as a thank you!</p>
+        </div>
+        <div class="inquire">
+            <a href="{{ url_for('confirmation') }}">I'm interested!</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
