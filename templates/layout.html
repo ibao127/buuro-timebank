@@ -10,7 +10,7 @@
         <div class="bg-wave {% block no_wave %}{% endblock %}"></div>
         <nav>
             <a href="{{ url_for('home') }}" class="nav-logo">
-                <img src="{{ url_for('static', filename='images/home-icon.svg') }}" alt="home">
+                <img src="{{ url_for('static', filename='images/icons/home-icon.svg') }}" alt="home">
                 <span class="nav-brand">
                     <img src="{{ url_for('static', filename='images/buuro-logo.svg') }}" alt="Buuro">
                 </span>
@@ -25,7 +25,7 @@
             <div class="nav-right">
                 <div class="dropdown">
                     <button aria-label="Language">
-                        <img src="{{ url_for('static', filename='images/globe-icon.svg') }}" alt="language">
+                        <img src="{{ url_for('static', filename='images/icons/globe-icon.svg') }}" alt="language">
                     </button>
                     <div class="dropdown-menu">
                         <a href="{{ url_for('set_language', lang='en') }}">English</a>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="dropdown">
                     <button aria-label="Account">
-                        <img src="{{ url_for('static', filename='images/user-icon.svg') }}" alt="account">
+                        <img src="{{ url_for('static', filename='images/icons/user-icon.svg') }}" alt="account">
                     </button>
                     <div class="dropdown-menu">
                         <a href="{{ url_for('account') }}">Account</a>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="nav-sidebar-wrap">
                     <button aria-label="Menu" class="nav-sidebar-toggle" onclick="toggleSidebar()">
-                        <img src="{{ url_for('static', filename='images/settings_account.svg') }}" alt="menu">
+                        <img src="{{ url_for('static', filename='images/icons/settings_account.svg') }}" alt="menu">
                     </button>
                     <div class="nav-sidebar" id="sidebar">
                         <a href="{{ url_for('home') }}">Home</a>
@@ -52,19 +52,16 @@
                         <a href="{{ url_for('events') }}">Events</a>
                         <a href="{{ url_for('requests_page') }}">Requests</a>
                         <a href="{{ url_for('faq') }}">FAQ</a>
-                        <hr>
                         <div class="sidebar-dropdown">
                             <span onclick="toggleSidebarDropdown(this)">Account ↓</span>
                             <div class="sidebar-dropdown-menu">
                                 <a href="{{ url_for('account') }}">My Account</a>
                                 <a href="{{ url_for('wallet') }}">Wallet</a>
-                                <hr>
                                 <a href="{{ url_for('login') }}">Log in</a>
                                 <a href="{{ url_for('signup') }}">Sign up</a>
                                 <a href="#">Log out</a>
                             </div>
                         </div>
-                        <hr>
                         <div class="sidebar-dropdown">
                             <span onclick="toggleSidebarDropdown(this)">Language ↓</span>
                             <div class="sidebar-dropdown-menu">
