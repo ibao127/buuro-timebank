@@ -97,6 +97,12 @@ a {
   border-right: 1.5px solid var(--red);
 }
 
+@media(max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+}
+
 /* .nav-links a:first-child {
   border-left: 1.5px solid var(--dark);
 } */
@@ -481,6 +487,7 @@ a {
     gap: 12px;
     position: relative;
     z-index: 2;
+    justify-content: space-between;
 }
 
 .event-header {
@@ -1398,13 +1405,15 @@ footer {
 }
 
 
+/* REQUEST DETAILS */
+
 .request-outline {
     margin: 7% 15%;
     background-color: var(--card-bg);
     padding: 30px;
     border: 3px dashed var(--red);
     border-radius: 16px;
-    height: 65dvh;
+    height: auto;
     display: flex;
     flex-direction: row;
 }
@@ -1415,6 +1424,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 20px;
     border-right: 1px solid var(--dark);
     padding: 25px 0;
     padding-right: 25px;
@@ -1426,11 +1436,13 @@ footer {
 }
 
 .request-info th {
-    padding: 20px 20px;
+    padding: 17px 20px;
+    vertical-align: text-top;
 }
 
 .request-info td {
-    padding: 20px 0;
+    padding: 17px 0;
+    vertical-align: text-top;
 }
 
 .request-issuer {
@@ -1451,6 +1463,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
     padding: 25px 25px;
 }
 
@@ -1495,4 +1508,45 @@ footer {
     line-height: 1.7;
     padding: 0 10px;
     text-align: center;
+}
+
+@media(max-width: 1250px) {
+    .request-issuer {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1000px) {
+    .request-outline {
+        flex-direction: column;
+    }
+
+    .request-info {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--dark);
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .request-info td, .request-info th {
+        padding: 5px;
+    }
+
+    .request-content {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    .request-info {
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        padding-left: 25px;
+    }
+
+    .request-issuer {
+        padding: 0;
+    }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Linearity Curve (http://linearity.io/curve) -->
+<svg height="512.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 512 512" width="512.0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1">
+<path d="M66.1716 38.7674C106.813 89.006 154.298 133.986 198.31 177.998C286.905 266.593 381.693 348.76 469.975 437.042" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+<path d="M64.589 38.7396C55.541 76.9421 54.567 102.86 57.049 125.198C64.7775 194.754 103.078 248.285 145.518 306.157C154.848 318.879 183.462 361.054 200.308 363.46C213.254 365.31 232.547 342.379 242.029 335.814C269.541 316.767 270.681 309.173 298.328 289.066" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+<path d="M278.724 312.189C277.803 314.03 279.876 314.184 281.237 315.205C296.216 326.439 309.842 341.047 323.461 353.91C333.041 362.958 343.961 370.53 353.621 379.546C374.266 398.815 393.496 420.953 416.454 437.352C423.863 442.645 434.596 457.382 444.1 458.966C449.558 459.876 466.253 441.41 469.92 437.743" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+<path d="M297.322 301.633C313.61 326.064 345.486 348.604 367.695 367.482C397.192 392.554 422.434 424.918 454.656 446.4" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+</g>
+</svg>
