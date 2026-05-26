@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="report">
+    <div class="report-left">
+        <h1>Report an issue</h1>
+        <p>Report inappropriate behaviour, misuse of the request system, unfair currency exchanges or website issues. Your feedback is essential for improvement of <span class="notranslate">Buuro</span>!!</p>
+    </div>
+    <div class="report-form">
+        <div class="form-field">
+            <label>Name</label>
+            <input type="text" placeholder="Your full name">
+        </div>
+        <div class="form-field">
+            <label>Email address</label>
+            <input type="email" placeholder="your.email@example.com">
+        </div>
+        <div class="form-field">
+            <label>Subject</label>
+            <input type="text" placeholder="Brief description of your message">
+        </div>
+        <div class="form-field">
+            <label>Message</label>
+            <textarea placeholder="Please provide as much detail as possible..."></textarea>
+        </div>
+        <div class="form-submit">
+            <a href="{{ url_for('submit_report') }}" class="submit-btn">Submit report</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

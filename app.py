@@ -67,5 +67,13 @@ def account():
 @app.route('/faq')
 def faq():
     return render_template('faq.html')
+
+@app.route('/report')
+def report():
+    return render_template('report.html')
+
+@app.route('/submit_report')
+def submit_report():
+    return render_template('submit_report.html')
 if __name__ == '__main__':
     app.run(debug=True)

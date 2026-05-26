@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Buuro</title>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka+One&family=Pacifico&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fredoka+One&family=Pacifico&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <script src="{{ url_for('static', filename='js/translate.js') }}"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </head>
     <body>
         <div class="bg-wave {% block no_wave %}{% endblock %}"></div>
@@ -28,8 +31,8 @@
                         <img src="{{ url_for('static', filename='images/icons/globe-icon.svg') }}" alt="language">
                     </button>
                     <div class="dropdown-menu">
-                        <a href="{{ url_for('set_language', lang='en') }}">English</a>
-                        <a href="{{ url_for('set_language', lang='nl') }}">Nederlands</a>
+                        <a href="#" onclick="triggerTranslate('nl'); return false;">Nederlands</a>
+                        <a href="#" onclick="triggerTranslate('en'); return false;">English</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -59,7 +62,7 @@
                                 <a href="{{ url_for('wallet') }}">Wallet</a>
                                 <a href="{{ url_for('login') }}">Log in</a>
                                 <a href="{{ url_for('signup') }}">Sign up</a>
-                                <a href="#">Log out</a>
+                                <a href="{{ url_for('home') }}">Log out</a>
                             </div>
                         </div>
                         <div class="sidebar-dropdown">
@@ -79,12 +82,11 @@
         <footer>
             <div class="footer-col">
                 <span class="footer-heading">Contact us</span>
-                <a href="mailto:hallo@buuro.net">branko@buuro.net</a>
+                <a href="mailto:hallo@buuro.net">hallo@buuro.net</a>
             </div>
             <div class="footer-col center">
                 <a href="{{ url_for('faq') }}">FAQ</a>
-                <a href="#">Report an issue</a>
-                <a href="#">Contact page</a>
+                <a href="{{ url_for('report') }}">Report an issue</a>
             </div>
             <div class="footer-col right">
                 <img src="{{ url_for('static', filename='images/buuro-logo.svg') }}" alt="Buuro">
@@ -93,5 +95,6 @@
         <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
         <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
         <script src="{{ url_for('static', filename='js/faq.js') }}"></script>
+        <div id="google_translate_element" style="display:none"></div>
     </body>
     </html>

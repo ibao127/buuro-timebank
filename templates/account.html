@@ -3,18 +3,16 @@
 {% block no_wave %}hidden{% endblock %}
 
 {% block content %}
-<div class="sidebar-toggle" onclick="toggleSidebar()">
+<div class="sidebar-toggle" onclick="toggleAccountSidebar()">
     <span></span>
     <span></span>
     <span></span>
 </div>
 
-<div class="sidebar" id="sidebar">
+<div class="sidebar" id="account-sidebar">
     <a href="{{ url_for('account') }}">Account</a>
     <a href="{{ url_for('wallet') }}">Wallet</a>
-    <a href="#">Settings</a>
-    <a href="#">Edit Profile</a>
-    <a href="#">Log out</a>
+    <a href="{{ url_for('home') }}">Log out</a>
 </div>
 <section class="account">
 
