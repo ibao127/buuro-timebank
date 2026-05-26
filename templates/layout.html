@@ -68,8 +68,8 @@
                         <div class="sidebar-dropdown">
                             <span onclick="toggleSidebarDropdown(this)">Language ↓</span>
                             <div class="sidebar-dropdown-menu">
-                                <a href="{{ url_for('set_language', lang='en') }}">English</a>
-                                <a href="{{ url_for('set_language', lang='nl') }}">Nederlands</a>
+                                <a href="#" onclick="triggerTranslate('nl'); return false;">Nederlands</a>
+                                <a href="#" onclick="triggerTranslate('en'); return false;">English</a>
                             </div>
                         </div>
                     </div>
