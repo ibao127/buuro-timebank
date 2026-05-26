@@ -1763,4 +1763,47 @@ footer {
     padding: 24px 16px;
     gap: 32px;
     }
+
+    .wallet {
+        padding: 24px 16px;
+    }
+
+    .wallet-balance {
+        flex-direction: column;
+    }
+
+    .transaction-item {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .transaction-amount {
+        text-align: left;
+    }
+
+    .faq {
+        padding: 24px 16px;
+    }
+
+    .events {
+        padding: 24px 16px;
+    }
+
+    .login {
+        padding: 24px 16px;
+    }
+
+    .login-card {
+        padding: 24px 16px;
+    }
+
+    .request-outline {
+        flex-direction: column;
+        padding: 24px 16px;
+    }
+
+    .confirmation {
+        padding: 24px 16px;
+}
 }

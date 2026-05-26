@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="report">
+    <div class="report-left">
+        <h1>Post a request</h1>
+        <p>Need help with something? Post a request and let your neighbours know. Offer Uuros in return for their time.</p>
+    </div>
+    <div class="report-form">
+        <div class="form-field">
+            <label>Title</label>
+            <input type="text" placeholder="Brief title of your request">
+        </div>
+        <div class="form-field">
+            <label>Description</label>
+            <textarea placeholder="Describe what you need help with..."></textarea>
+        </div>
+        <div class="form-field">
+            <label>Skills needed</label>
+            <input type="text" placeholder="e.g. Cooking, Gardening, Translation">
+        </div>
+        <div class="form-field">
+            <label>Location</label>
+            <input type="text" placeholder="e.g. Amsterdam Noord">
+        </div>
+        <div class="form-field">
+            <label>Date</label>
+            <input type="date">
+        </div>
+        <div class="form-field">
+            <label>Uuros offered</label>
+            <input type="number" placeholder="e.g. 2" min="1">
+        </div>
+        <div class="form-submit">
+            <a href="{{ url_for('confirmation_request') }}" class="submit-btn">Post request</a>
+        </div>
+    </div>
+</section>
+{% endblock %}  

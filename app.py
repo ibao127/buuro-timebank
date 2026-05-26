@@ -75,5 +75,13 @@ def report():
 @app.route('/submit_report')
 def submit_report():
     return render_template('submit_report.html')
+
+@app.route('/post-request')
+def post_request():
+    return render_template('post_request.html')
+
+@app.route('/confirmation-request')
+def confirmation_request():
+    return render_template('confirmation_request.html')
 if __name__ == '__main__':
     app.run(debug=True)
