@@ -620,8 +620,8 @@ a {
     background: var(--dark);
     color: var(--cream);
     font-family: var(--font-mono);
-    font-size: 15px;
-    padding: 14px 32px;
+    font-size: 10pt;
+    padding: 10px 10px;
     border-radius: 20px;
     text-decoration: none;
 }
@@ -651,18 +651,16 @@ a {
     width: 100%;
 }
 
+.filter-section {
+    display: flex;
+    flex-direction: column;
+}
+
 .filters {
     display: flex;
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
-}
-
-.filters span {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .filters select {
@@ -677,7 +675,8 @@ a {
 }
 
 .skills-section h2,
-.requests-section h2 {
+.requests-section h2,
+.filter-section h2 {
     font-family: var(--font-mono);
     font-size: 14px;
     font-weight: 700;
@@ -760,6 +759,56 @@ a {
     border-top: 1.5px solid var(--dark);
     padding-top: 8px;
     margin-top: auto;
+}
+
+@media(max-width: 640px) {
+
+    .requests {
+        align-items: center;
+    }
+
+    .requests-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .skills-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-grid {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .requests-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .requests-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .filter-section {
+        align-items: center;
+    }
+
+    .filters {
+        justify-content: center;
+    }
 }
 
 /* ── LOGIN ── */
@@ -911,6 +960,7 @@ a {
 .profile-card {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
     border: 2px dashed var(--red);
     border-radius: 20px;
@@ -970,6 +1020,7 @@ a {
     gap: 8px;
     flex-wrap: wrap;
 }
+
 
 .skill-tag {
     font-family: var(--font-mono);
@@ -1068,14 +1119,15 @@ a {
 }
 
 .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 16px;
+    justify-content: space-between;
 }
 
 .review-card {
     border: 2px dashed var(--red);
     border-radius: 16px;
+    width: 100%;
     padding: 20px;
     min-height: 120px;
     display: flex;
@@ -1094,6 +1146,25 @@ a {
     font-family: var(--font-mono);
     font-size: 20px;
     font-weight: 700;
+}
+
+@media(max-width: 620px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .profile-balance {
+        align-self: center;
+    }
+
+    .impact-grid {
+        flex-direction: column;
+    }
+
+    .reviews-grid {
+        flex-direction: column;
+    }
 }
 
 /* ── SIDEBAR ── */
